@@ -2,11 +2,13 @@ package main
 
 import (
 	"aljabr/domain"
+	"aljabr/logs"
 	"bytes"
 	"encoding/json"
 	"fmt"
 	"io"
 	"log"
+	"log/slog"
 	"net/http"
 	"os"
 )
@@ -15,6 +17,8 @@ type Response struct {
 	Data   string `json:"data"`
 	Status int    `json:"status"`
 }
+
+var Logger = logger.NewLogger()
 
 func main() {
 	// Load data from JSON
@@ -33,9 +37,12 @@ func main() {
 }
 
 func insertClassDataToAPI(classURL, topicURL, questionURL, lessonURL string, data []domain.Data) {
+	Logger.Info("Inserting classes...")
+
 	for i, item := range data {
 		classID, err := sendPostRequest(classURL, item.Class)
 		if err != nil {
+			Logger.Error("Error inserting class: %v", slog.Any("err",err))
 			log.Printf("Error inserting class: %v\n", err)
 			continue
 		}
@@ -45,13 +52,18 @@ func insertClassDataToAPI(classURL, topicURL, questionURL, lessonURL string, dat
 		log.Printf("Class inserted successfully! ID: %s\n", classID)
 	}
 
+	Logger.Info("Classes inserted successfully!")
+
 	insertTopicDataToAPI(topicURL, questionURL, lessonURL, data)
 }
 
 func insertTopicDataToAPI(topicURL, questionURL, lessonURL string, data []domain.Data) {
+	Logger.Info("Inserting topics...")
+
 	for i, item := range data {
 		topicID, err := sendPostRequest(topicURL, item.Topic)
 		if err != nil {
+			Logger.Error("Error inserting topic: %v", slog.Any("err",err))
 			log.Printf("Error inserting topic: %v\n", err)
 			continue
 		}
@@ -61,30 +73,42 @@ func insertTopicDataToAPI(topicURL, questionURL, lessonURL string, data []domain
 		log.Printf("Topic inserted successfully! ID: %s\n", topicID)
 	}
 
+	Logger.Info("Topics inserted successfully!")
+
 	insertLessonDataToAPI(lessonURL, data)
 	insertQuestionDataToAPI(questionURL, data)
 }
 
 func insertQuestionDataToAPI(questionURL string, data []domain.Data) {
+	Logger.Info("Inserting questions...")
+
 	for _, item := range data {
 		id, err := sendPostRequest(questionURL, item.Question)
 		if err != nil {
+			Logger.Error("Error inserting question: %v", slog.Any("err",err))
 			log.Printf("Error inserting question: %v\n", err)
 		} else {
 			log.Printf("Question inserted successfully! ID: %s\n", id)
 		}
 	}
+
+	Logger.Info("Questions inserted successfully!")
 }
 
 func insertLessonDataToAPI(lessonURL string, data []domain.Data) {
+	Logger.Info("Inserting lessons...")
+
 	for _, item := range data {
 		id, err := sendPostRequest(lessonURL, item.Lesson)
 		if err != nil {
+			Logger.Error("Error inserting lesson: %v", slog.Any("err",err))
 			log.Printf("Error inserting lesson: %v\n", err)
 		} else {
 			log.Printf("Lesson inserted successfully! ID: %s\n", id)
 		}
 	}
+	
+	Logger.Info("Lessons inserted successfully!")
 }
 
 func sendPostRequest(url string, body interface{}) (string, error) {

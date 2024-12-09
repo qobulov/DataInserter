@@ -1,0 +1,8 @@
+time=2024-12-09T14:21:15.619+05:00 level=INFO msg="Inserting classes..."
+time=2024-12-09T14:21:17.175+05:00 level=INFO msg="Classes inserted successfully!"
+time=2024-12-09T14:21:17.176+05:00 level=INFO msg="Inserting topics..."
+time=2024-12-09T14:21:18.426+05:00 level=INFO msg="Topics inserted successfully!"
+time=2024-12-09T14:21:18.426+05:00 level=INFO msg="Inserting lessons..."
+time=2024-12-09T14:21:19.520+05:00 level=INFO msg="Lessons inserted successfully!"
+time=2024-12-09T14:21:19.520+05:00 level=INFO msg="Inserting questions..."
+time=2024-12-09T14:21:20.739+05:00 level=INFO msg="Questions inserted successfully!"
