@@ -1,16 +1,16 @@
-# PDF-to-Text and JSON Conversion Tool
+# JSON Data Inserter
 
-This project is a utility for extracting educational content from PDFs, structuring it into JSON format, and ensuring completeness of metadata for classes, topics, lessons, and questions.
+This project is a utility for inserting educational content from JSON files into a server, ensuring the completeness of metadata for classes, topics, lessons, and questions.
 
 ## Features
 
-- Extracts lessons, topics, and questions from PDFs.
-- Outputs data in detailed JSON format.
-- Includes multimedia links (images, videos) for lessons and solutions.
+- Inserts lessons, topics, and questions into a server.
+- Processes JSON data in a structured format.
+- Supports multimedia links (images, videos) for lessons and solutions.
 
 ## JSON Structure
 
-The JSON output adheres to the following structure:
+The JSON input adheres to the following structure:
 
 ```json
 [
@@ -36,7 +36,7 @@ The JSON output adheres to the following structure:
     }
   }
 ]
-```
+
 
 ## Installation
 
@@ -57,7 +57,7 @@ The JSON output adheres to the following structure:
 
 1. Run the tool:
    ```bash
-   go run main.go
+   go run cmd/main.go
    ```
 2. Provide the PDF file for processing.
 3. The JSON output will be generated in the specified directory.
