@@ -91,7 +91,7 @@
       "video_url": ["https://example.com/renaissance1.mp4", "https://example.com/renaissance2.mp4"]
     },
     "question": {
-      "topic_id": "topic8-d8e9f10b-4c3d-2a1b-0e2f3c4d5f6a", 
+      "topic_id": "topic8", 
       "question_type": "short_answer",
       "question_level": "medium",
       "question_text": "Who painted the Mona Lisa?",

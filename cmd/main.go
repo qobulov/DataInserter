@@ -23,11 +23,12 @@ func main() {
 		log.Fatalf("Error reading data: %v", err)
 	}
 
-	// Insert classes and update topics with new class IDs
+	// Insert classes and update topics, lessons and questions
 	classURL := "http://54.169.168.148:8086/api/classes"
 	topicURL := "http://54.169.168.148:8086/api/topics"
 	questionURL := "http://54.169.168.148:8086/api/questions"
 	lessonURL := "http://54.169.168.148:8086/api/lessons"
+
 	insertClassDataToAPI(classURL, topicURL, questionURL, lessonURL, data)
 }
 
@@ -38,14 +39,13 @@ func insertClassDataToAPI(classURL, topicURL, questionURL, lessonURL string, dat
 			log.Printf("Error inserting class: %v\n", err)
 			continue
 		}
-		// Update topic with new class_id
+		// Update topic and lesson with new class_id
 		data[i].Topic.ClassID = classID
 		data[i].Lesson.ClassID = classID
 		log.Printf("Class inserted successfully! ID: %s\n", classID)
 	}
 
 	insertTopicDataToAPI(topicURL, questionURL, lessonURL, data)
-	// log.Println("Data:", data)
 }
 
 func insertTopicDataToAPI(topicURL, questionURL, lessonURL string, data []domain.Data) {
@@ -55,7 +55,7 @@ func insertTopicDataToAPI(topicURL, questionURL, lessonURL string, data []domain
 			log.Printf("Error inserting topic: %v\n", err)
 			continue
 		}
-		// Update question with new topic_id
+		// Update question and lesson with new topic_id
 		data[i].Question.TopicID = topicID
 		data[i].Lesson.TopicID = topicID
 		log.Printf("Topic inserted successfully! ID: %s\n", topicID)

@@ -70,21 +70,7 @@ type Question struct {
 	SolutionImageURL *string  `json:"solution_image_url,omitempty" validate:"omitempty,url"`
 }
 
-type GetSolutionResponse struct {
-	Solution         string  `json:"solution"`
-	SolutionImageURL *string `json:"solution_image_url,omitempty"`
-}
-
-type AddOptionParams struct {
-	QuestionID string `json:"question_id"`
-	NewOption  string `json:"new_option"`
-}
-
-type AddOptionResponse struct {
-	QuestionID string   `json:"question_id"`
-	Options    []string `json:"options"`
-}
-
+//Json data --------------------------------------------------
 type Data struct {
 	Class CreateClassParams `json:"class"`
 	Topic CreateTopicParams `json:"topic"`
