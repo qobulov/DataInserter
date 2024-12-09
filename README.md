@@ -36,7 +36,7 @@ The JSON input adheres to the following structure:
     }
   }
 ]
-
+```
 
 ## Installation
 
