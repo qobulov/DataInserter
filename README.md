@@ -1,48 +1,71 @@
-# DataInserter prompt
+# PDF-to-Text and JSON Conversion Tool
 
-Act as a PDF-to-text and JSON conversion assistant. 
-Your task is to extract all the content from a given PDF, identify relevant lessons and questions, 
-and structure them into the JSON format provided below. 
-Ensure each question includes details such as class name, topic ID, lesson information, question type, level, text, 
-options, correct answer, and solution. If any multimedia resources or images are mentioned, include their URLs.
-Make at least 50 tests.
-Make sure all fields are filled in, especially IDs.
+This project is a utility for extracting educational content from PDFs, structuring it into JSON format, and ensuring completeness of metadata for classes, topics, lessons, and questions.
 
-Rules:
-1. Identify sections related to "Class" and map them to a "class" object.
-2. Extract topics and map them to a "topic" object, assigning unique topic IDs.
-3. Group lessons and their associated multimedia under a "lesson" object.
-4. Extract questions with their attributes (type, level, text, options, answers, and solutions) under a "question" object.
+## Features
 
-Use the following JSON structure for each extracted lesson and question:
+- Extracts lessons, topics, and questions from PDFs.
+- Outputs data in detailed JSON format.
+- Includes multimedia links (images, videos) for lessons and solutions.
 
+## JSON Structure
+
+The JSON output adheres to the following structure:
+
+\`\`\`json
 [
   {
-    "class": {
-      "name": "<Class Name>"
-    },
-    "topic": {
-      "id": "<Unique Topic ID>",
-      "name": "<Topic Name>"
-    },
+    "class": { "name": "Class Name" },
+    "topic": { "id": "Unique Topic ID", "name": "Topic Name" },
     "lesson": {
-      "class_id": "<Class ID>",
-      "topic_id": "<Topic ID>",
-      "video_url": ["<Video URL 1>", "<Video URL 2>"]
+      "class_id": "Class ID",
+      "topic_id": "Topic ID",
+      "video_url": ["Video URL 1", "Video URL 2"]
     },
     "question": {
-      "topic_id": "<Topic ID>",
-      "question_type": "<Question Type>",
-      "question_level": "<Difficulty Level>",
-      "question_text": "<Question Text>",
-      "question_image_url": "<Image URL>",
-      "options": ["<Option 1>", "<Option 2>", "<Option 3>"],
-      "options_url": ["<Option Image URL 1>", "<Option Image URL 2>"],
-      "answer": "<Correct Answer>",
-      "solution": "<Explanation>",
-      "solution_image_url": "<Solution Image URL>"
+      "topic_id": "Topic ID",
+      "question_type": "Question Type",
+      "question_level": "Difficulty Level",
+      "question_text": "Question Text",
+      "question_image_url": "Image URL",
+      "options": ["Option 1", "Option 2", "Option 3"],
+      "options_url": ["Option Image URL 1", "Option Image URL 2"],
+      "answer": "Correct Answer",
+      "solution": "Explanation",
+      "solution_image_url": "Solution Image URL"
     }
   }
 ]
+\`\`\`
 
-<!-- Now, process the following text: -->
+## Installation
+
+1. Clone the repository:
+   \`\`\`bash
+   git clone https://github.com/qobulov/DataInserter.git
+   \`\`\`
+2. Navigate to the project directory:
+   \`\`\`bash
+   cd DataInserter
+   \`\`\`
+3. Install dependencies:
+   \`\`\`bash
+   go mod tidy
+   \`\`\`
+
+## Usage
+
+1. Run the tool:
+   \`\`\`bash
+   go run main.go
+   \`\`\`
+2. Provide the PDF file for processing.
+3. The JSON output will be generated in the specified directory.
+
+## Contribution
+
+Contributions are welcome! Feel free to fork the repository, make changes, and submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
