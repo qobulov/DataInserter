@@ -8,27 +8,29 @@ This project is a utility for extracting educational content from PDFs, structur
 - Outputs data in detailed JSON format.
 - Includes multimedia links (images, videos) for lessons and solutions.
 
+
+
 ## Installation
 
 1. Clone the repository:
-   \`\`\`bash
+   ```bash
    git clone https://github.com/qobulov/DataInserter.git
-   \`\`\`
+   ```
 2. Navigate to the project directory:
-   \`\`\`bash
+   ```bash
    cd DataInserter
-   \`\`\`
+   ```
 3. Install dependencies:
-   \`\`\`bash
+   ```bash
    go mod tidy
-   \`\`\`
+   ```
 
 ## Usage
 
 1. Run the tool:
-   \`\`\`bash
+   ```bash
    go run main.go
-   \`\`\`
+   ```
 2. Provide the PDF file for processing.
 3. The JSON output will be generated in the specified directory.
 
