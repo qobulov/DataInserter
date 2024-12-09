@@ -15,24 +15,29 @@ The JSON input adheres to the following structure:
 ```json
 [
   {
-    "class": { "name": "Class Name" },
-    "topic": { "id": "Unique Topic ID", "name": "Topic Name" },
+    "class": {
+      "name": "<Class Name>"
+    },
+    "topic": {
+      "id": "<Unique Topic ID>",
+      "name": "<Topic Name>"
+    },
     "lesson": {
-      "class_id": "Class ID",
-      "topic_id": "Topic ID",
-      "video_url": ["Video URL 1", "Video URL 2"]
+      "class_id": "<Class ID>",
+      "topic_id": "<Topic ID>",
+      "video_url": ["<Video URL 1>", "<Video URL 2>"]
     },
     "question": {
-      "topic_id": "Topic ID",
-      "question_type": "Question Type",
-      "question_level": "Difficulty Level",
-      "question_text": "Question Text",
-      "question_image_url": "Image URL",
-      "options": ["Option 1", "Option 2", "Option 3"],
-      "options_url": ["Option Image URL 1", "Option Image URL 2"],
-      "answer": "Correct Answer",
-      "solution": "Explanation",
-      "solution_image_url": "Solution Image URL"
+      "topic_id": "<Topic ID>",
+      "question_type": "<Question Type>",
+      "question_level": "<Difficulty Level>",
+      "question_text": "<Question Text>",
+      "question_image_url": "<Image URL>",
+      "options": ["<Option 1>", "<Option 2>", "<Option 3>"],
+      "options_url": ["<Option Image URL 1>", "<Option Image URL 2>"],
+      "answer": "<Correct Answer>",
+      "solution": "<Explanation>",
+      "solution_image_url": "<Solution Image URL>"
     }
   }
 ]
