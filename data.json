@@ -13,7 +13,7 @@
       "video_url": ["https://example.com/english1.mp4", "https://example.com/english2.mp4"]
     },
     "question": {
-      "topic_id": "topic5-12345678-1234-1234-1234-123456789012", 
+      "topic_id": "topic5", 
       "question_type": "multiple_choice",
       "question_level": "easy",
       "question_text": "Which of the following is a correct sentence?",
@@ -39,7 +39,7 @@
       "video_url": ["https://example.com/ww2_video1.mp4", "https://example.com/ww2_video2.mp4"]
     },
     "question": {
-      "topic_id": "topic6-87654321-8765-8765-8765-876543210987", 
+      "topic_id": "topic6", 
       "question_type": "true_false",
       "question_level": "medium",
       "question_text": "World War II ended in 1945.",
@@ -65,7 +65,7 @@
       "video_url": ["https://example.com/continents1.mp4"]
     },
     "question": {
-      "topic_id": "topic7-a1b2c3d4-5678-9876-5432-1a2b3c4d5e6f", 
+      "topic_id": "topic7", 
       "question_type": "multiple_choice",
       "question_level": "hard",
       "question_text": "Which continent has the highest population?",
