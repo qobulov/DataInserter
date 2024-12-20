@@ -25,8 +25,8 @@ The JSON input adheres to the following structure:
     "topic": {
       "class_id": "<Class ID>",
       "chapter_id":"<Chapter ID>",
-      "name": "<Topic Name>",
-      "title": "<Topic Collection Title>"
+      "title": "<Topic Collection Title>",
+      "name": "<Topic Name>"
     },
     "question": {
       "topic_id": "<Topic ID>",
@@ -61,8 +61,8 @@ The JSON input adheres to the following structure:
    ```
 
 ## Usage
-
-1. Run the tool:
+1. If your `data.json` is ready for the insert then go ahead! 
+2. Run the tool:
    ```bash
    go run cmd/main.go
    ```
