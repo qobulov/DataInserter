@@ -2,7 +2,7 @@ package main
 
 import (
 	"aljabr/domain"
-	"aljabr/logs"
+	logger "aljabr/logs"
 	"bytes"
 	"encoding/json"
 	"fmt"
@@ -14,8 +14,8 @@ import (
 )
 
 type Response struct {
-	Data   string `json:"data"`
-	Status int    `json:"status"`
+    Data   interface{} `json:"data"`
+    Status int         `json:"status"`
 }
 
 var Logger = logger.NewLogger()
@@ -28,31 +28,59 @@ func main() {
 	}
 
 	// Insert classes and update topics, lessons and questions
-	classURL := "http://152.42.130.200:8086/api/classes"
-	topicURL := "http://152.42.130.200:8086/api/topics"
-	questionURL := "http://152.42.130.200:8086/api/questions"
-	lessonURL := "http://152.42.130.200:8086/api/lessons"
+	classURL := "http://student.al-jabr-edu.uz:8086/api/classes"
+	chapterURL := "http://student.al-jabr-edu.uz:8086/api/chapters"
+	topicURL := "http://student.al-jabr-edu.uz:8086/api/topics"
+	questionURL := "http://student.al-jabr-edu.uz:8086/api/questions"
+	lessonURL := "http://student.al-jabr-edu.uz:8086/api/lessons"
 
-	insertClassDataToAPI(classURL, topicURL, questionURL, lessonURL, data)
+	insertClassDataToAPI(classURL, chapterURL, topicURL, questionURL, lessonURL, data)
 }
 
-func insertClassDataToAPI(classURL, topicURL, questionURL, lessonURL string, data []domain.Data) {
+func insertClassDataToAPI(classURL, chapterURL, topicURL, questionURL, lessonURL string, data []domain.Data) {
 	Logger.Info("Inserting classes...")
 
 	for i, item := range data {
 		classID, err := sendPostRequest(classURL, item.Class)
 		if err != nil {
-			Logger.Error("Error inserting class: %v", slog.Any("err",err))
+			Logger.Error("Error inserting class: %v", slog.Any("err", err))
 			log.Printf("Error inserting class: %v\n", err)
 			continue
 		}
-		// Update topic and lesson with new class_id
+		// Update chapter,topic and lesson with new class_id
 		data[i].Topic.ClassID = classID
-		data[i].Lesson.ClassID = classID
+		data[i].Chapter.ClassID = classID
+		// data[i].Lesson.ClassID = classID
 		log.Printf("Class inserted successfully! ID: %s\n", classID)
 	}
 
 	Logger.Info("Classes inserted successfully!")
+
+	insertChapterDataToAPI(chapterURL, topicURL, questionURL, lessonURL, data)
+}
+
+func insertChapterDataToAPI(chapterURL, topicURL, questionURL, lessonURL string, data []domain.Data) {
+	Logger.Info("Inserting chapters...")
+
+	for i, item := range data {
+		chapterID, err := sendPostRequest(chapterURL, item.Chapter)
+		if item.Chapter.ClassID == "" {
+			log.Printf("Skipping chapter insertion, missing class_id.")
+			continue
+		}
+		
+		if err != nil {
+			Logger.Error("Error inserting class: %v", slog.Any("err", err))
+			log.Printf("Error inserting class: %v\n", err)
+			continue
+		}
+		// Update topic and lesson with new chapter_id
+		data[i].Topic.ChapterID = chapterID
+		// data[i].Lesson.ChapterID = chapterID
+		log.Printf("Chapter inserted successfully! ID: %s\n", chapterID)
+	}
+
+	Logger.Info("Chapters inserted successfully!")
 
 	insertTopicDataToAPI(topicURL, questionURL, lessonURL, data)
 }
@@ -63,19 +91,19 @@ func insertTopicDataToAPI(topicURL, questionURL, lessonURL string, data []domain
 	for i, item := range data {
 		topicID, err := sendPostRequest(topicURL, item.Topic)
 		if err != nil {
-			Logger.Error("Error inserting topic: %v", slog.Any("err",err))
+			Logger.Error("Error inserting topic: %v", slog.Any("err", err))
 			log.Printf("Error inserting topic: %v\n", err)
 			continue
 		}
 		// Update question and lesson with new topic_id
 		data[i].Question.TopicID = topicID
-		data[i].Lesson.TopicID = topicID
+		// data[i].Lesson.TopicID = topicID
 		log.Printf("Topic inserted successfully! ID: %s\n", topicID)
 	}
 
 	Logger.Info("Topics inserted successfully!")
-
-	insertLessonDataToAPI(lessonURL, data)
+	lessonURL = "http://student.al-jabr-edu.uz:8086/api/lessons"
+	// insertLessonDataToAPI(lessonURL, data)
 	insertQuestionDataToAPI(questionURL, data)
 }
 
@@ -85,7 +113,7 @@ func insertQuestionDataToAPI(questionURL string, data []domain.Data) {
 	for _, item := range data {
 		id, err := sendPostRequest(questionURL, item.Question)
 		if err != nil {
-			Logger.Error("Error inserting question: %v", slog.Any("err",err))
+			Logger.Error("Error inserting question: %v", slog.Any("err", err))
 			log.Printf("Error inserting question: %v\n", err)
 		} else {
 			log.Printf("Question inserted successfully! ID: %s\n", id)
@@ -99,15 +127,15 @@ func insertLessonDataToAPI(lessonURL string, data []domain.Data) {
 	Logger.Info("Inserting lessons...")
 
 	for _, item := range data {
-		id, err := sendPostRequest(lessonURL, item.Lesson)
+		id, err := sendPostRequest(lessonURL, item) // item.Lesson
 		if err != nil {
-			Logger.Error("Error inserting lesson: %v", slog.Any("err",err))
+			Logger.Error("Error inserting lesson: %v", slog.Any("err", err))
 			log.Printf("Error inserting lesson: %v\n", err)
 		} else {
 			log.Printf("Lesson inserted successfully! ID: %s\n", id)
 		}
 	}
-	
+
 	Logger.Info("Lessons inserted successfully!")
 }
 
@@ -137,22 +165,20 @@ func sendPostRequest(url string, body interface{}) (string, error) {
 	if err != nil {
 		return "", fmt.Errorf("error reading response body: %w", err)
 	}
-	
-	
+
 	var res Response
 	if err := json.Unmarshal(responseBody, &res); err != nil {
 		return "", fmt.Errorf("error unmarshaling response: %w", err)
 	}
-	
+
 	// Ensure status code is as expected
 	if resp.StatusCode != http.StatusCreated {
 		log.Printf("Unexpected status code: %d\n", resp.StatusCode)
 		log.Printf("Response Body: %s\n", responseBody)
 		return "", fmt.Errorf("unexpected status code: %d", resp.StatusCode)
 	}
-	
 
-	return res.Data, nil
+	return res.Data.(string), nil
 }
 
 func readDataFromJSON(filePath string) ([]domain.Data, error) {

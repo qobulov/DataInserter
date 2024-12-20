@@ -28,12 +28,12 @@ The JSON input adheres to the following structure:
       "name": "<Topic Name>",
       "title": "<Topic Collection Title>"
     },
-    "lesson": {
-      "class_id": "<Class ID>",
-      "chapter_id": "<Chapter ID>",
-      "topic_id": "<Topic ID>",
-      "video_url": ["<Video URL 1>", "<Video URL 2>"]
-    },
+    // "lesson": {
+    //   "class_id": "<Class ID>",
+    //   "chapter_id": "<Chapter ID>",
+    //   "topic_id": "<Topic ID>",
+    //   "video_url": ["<Video URL 1>", "<Video URL 2>"]
+    // },
     "question": {
       "topic_id": "<Topic ID>",
       "question_type": "<Question Type>",

@@ -4,23 +4,14 @@
       "name": "Class 1"
     },
     "chapter": {
-      "class_id": "d737b072-3c6a-49fb-9b76-e367b2328e97",
-      "name": "Chapter 1: Natural Sonlar ustida amallar"
+      "name": "Chapter 1: Natural Sonlar ustida amallar",
+      "class_id": "d737b072-3c6a-49fb-9b76-e367b2328e97"
     },
     "topic": {
       "class_id": "d737b072-3c6a-49fb-9b76-e367b2328e97",
       "chapter_id": "ce01f2cb-b084-4e73-b433-e3e6fd43f56d",
       "name": "Natural Sonlarni qo'shish",
       "title": "Natural Sonlar"
-    },
-    "lesson": {
-      "class_id": "d737b072-3c6a-49fb-9b76-e367b2328e97",
-      "chapter_id": "ce01f2cb-b084-4e73-b433-e3e6fd43f56d",
-      "topic_id": "aecd7715-d7d6-4145-85e0-e6ef606f567f",
-      "video_url": [
-        "https://example.com/video1.mp4",
-        "https://example.com/video2.mp4"
-      ]
     },
     "question": {
       "topic_id": "aecd7715-d7d6-4145-85e0-e6ef606f567f",

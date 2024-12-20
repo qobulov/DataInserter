@@ -95,7 +95,8 @@ type CreateQuestionParams struct {
 // Json data --------------------------------------------------
 type Data struct {
 	Class    CreateClassParams    `json:"class"`
+	Chapter  CreateChapterParams  `json:"chapter"`
 	Topic    CreateTopicParams    `json:"topic"`
-	Lesson   CreateLessonParams   `json:"lesson"`
+	// Lesson   CreateLessonParams   `json:"lesson"`
 	Question CreateQuestionParams `json:"question"`
 }
