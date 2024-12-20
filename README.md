@@ -16,14 +16,21 @@ The JSON input adheres to the following structure:
 [
   {
     "class": {
-      "name": "<Class Name>"
+      "name": "<Class Between 1-8>"
+    },
+    "chapter":{
+      "class_id":"<name>",
+      "name": "<Chapter Name>"
     },
     "topic": {
-      "id": "<Unique Topic ID>",
-      "name": "<Topic Name>"
+      "class_id": "<Class ID>",
+      "chapter_id":"<Chapter ID>",
+      "name": "<Topic Name>",
+      "title": "<Topic Collection Title>"
     },
     "lesson": {
       "class_id": "<Class ID>",
+      "chapter_id": "<Chapter ID>",
       "topic_id": "<Topic ID>",
       "video_url": ["<Video URL 1>", "<Video URL 2>"]
     },
@@ -33,8 +40,9 @@ The JSON input adheres to the following structure:
       "question_level": "<Difficulty Level>",
       "question_text": "<Question Text>",
       "question_image_url": "<Image URL>",
-      "options": ["<Option 1>", "<Option 2>", "<Option 3>"],
-      "options_url": ["<Option Image URL 1>", "<Option Image URL 2>"],
+      "question_language": "<Question Language>",
+      "options": ["<Option 1>", "<Option 2>", "<Option 3> ..."],
+      "options_url": ["<Option Image URL 1>", "<Option Image URL 2> ..."],
       "answer": "<Correct Answer>",
       "solution": "<Explanation>",
       "solution_image_url": "<Solution Image URL>"
@@ -64,8 +72,6 @@ The JSON input adheres to the following structure:
    ```bash
    go run cmd/main.go
    ```
-2. Provide the PDF file for processing.
-3. The JSON output will be generated in the specified directory.
 
 ## Contribution
 

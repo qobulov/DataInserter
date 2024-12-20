@@ -1,106 +1,43 @@
 [
   {
     "class": {
-      "name": "English"
+      "name": "Class 1"
+    },
+    "chapter": {
+      "class_id": "d737b072-3c6a-49fb-9b76-e367b2328e97",
+      "name": "Chapter 1: Natural Sonlar ustida amallar"
     },
     "topic": {
-      "id": "topic5",
-      "name": "Grammar"
+      "class_id": "d737b072-3c6a-49fb-9b76-e367b2328e97",
+      "chapter_id": "ce01f2cb-b084-4e73-b433-e3e6fd43f56d",
+      "name": "Natural Sonlarni qo'shish",
+      "title": "Natural Sonlar"
     },
     "lesson": {
-      "class_id": "class5",
-      "topic_id": "topic5",
-      "video_url": ["https://example.com/english1.mp4", "https://example.com/english2.mp4"]
+      "class_id": "d737b072-3c6a-49fb-9b76-e367b2328e97",
+      "chapter_id": "ce01f2cb-b084-4e73-b433-e3e6fd43f56d",
+      "topic_id": "aecd7715-d7d6-4145-85e0-e6ef606f567f",
+      "video_url": [
+        "https://example.com/video1.mp4",
+        "https://example.com/video2.mp4"
+      ]
     },
     "question": {
-      "topic_id": "topic5", 
+      "topic_id": "aecd7715-d7d6-4145-85e0-e6ef606f567f",
       "question_type": "multiple_choice",
-      "question_level": "easy",
-      "question_text": "Which of the following is a correct sentence?",
-      "question_image_url": null,
-      "options": ["He don't like apples", "She likes apples", "I can sings well"],
-      "options_url": [],
-      "answer": "She likes apples",
-      "solution": "The correct sentence follows proper grammar rules.",
-      "solution_image_url": null
-    }
-  },
-  {
-    "class": {
-      "name": "History"
-    },
-    "topic": {
-      "id": "topic6",
-      "name": "World War II"
-    },
-    "lesson": {
-      "class_id": "class6",
-      "topic_id": "topic6",
-      "video_url": ["https://example.com/ww2_video1.mp4", "https://example.com/ww2_video2.mp4"]
-    },
-    "question": {
-      "topic_id": "topic6", 
-      "question_type": "true_false",
       "question_level": "medium",
-      "question_text": "World War II ended in 1945.",
-      "question_image_url": null,
-      "options": ["True", "False"],
-      "options_url": [],
-      "answer": "True",
-      "solution": "World War II ended in 1945 after the surrender of Nazi Germany and Japan.",
-      "solution_image_url": null
-    }
-  },
-  {
-    "class": {
-      "name": "Geography"
-    },
-    "topic": {
-      "id": "topic7",
-      "name": "Continents"
-    },
-    "lesson": {
-      "class_id": "class7",
-      "topic_id": "topic7",
-      "video_url": ["https://example.com/continents1.mp4"]
-    },
-    "question": {
-      "topic_id": "topic7", 
-      "question_type": "multiple_choice",
-      "question_level": "hard",
-      "question_text": "Which continent has the highest population?",
-      "question_image_url": null,
-      "options": ["Asia", "Africa", "Europe"],
-      "options_url": [],
-      "answer": "Asia",
-      "solution": "Asia has the largest population of any continent.",
-      "solution_image_url": null
-    }
-  },
-  {
-    "class": {
-      "name": "Art"
-    },
-    "topic": {
-      "id": "topic8",
-      "name": "Renaissance Art"
-    },
-    "lesson": {
-      "class_id": "class8",
-      "topic_id": "topic8",
-      "video_url": ["https://example.com/renaissance1.mp4", "https://example.com/renaissance2.mp4"]
-    },
-    "question": {
-      "topic_id": "topic8", 
-      "question_type": "short_answer",
-      "question_level": "medium",
-      "question_text": "Who painted the Mona Lisa?",
-      "question_image_url": null,
-      "options": [],
-      "options_url": [],
-      "answer": "Leonardo da Vinci",
-      "solution": "Leonardo da Vinci is the artist who painted the Mona Lisa.",
-      "solution_image_url": null
+      "question_text": "What is the sum of 5 and 3?",
+      "question_image_url": "https://example.com/question-image.png",
+      "question_language": "english",
+      "options": ["8", "7", "10"],
+      "options_url": [
+        "https://example.com/option1-image.png",
+        "https://example.com/option2-image.png",
+        "https://example.com/option3-image.png"
+      ],
+      "answer": "8",
+      "solution": "Adding 5 and 3 gives 8.",
+      "solution_image_url": "https://example.com/solution-image.png"
     }
   }
 ]

@@ -28,10 +28,10 @@ func main() {
 	}
 
 	// Insert classes and update topics, lessons and questions
-	classURL := "http://54.169.168.148:8086/api/classes"
-	topicURL := "http://54.169.168.148:8086/api/topics"
-	questionURL := "http://54.169.168.148:8086/api/questions"
-	lessonURL := "http://54.169.168.148:8086/api/lessons"
+	classURL := "http://152.42.130.200:8086/api/classes"
+	topicURL := "http://152.42.130.200:8086/api/topics"
+	questionURL := "http://152.42.130.200:8086/api/questions"
+	lessonURL := "http://152.42.130.200:8086/api/lessons"
 
 	insertClassDataToAPI(classURL, topicURL, questionURL, lessonURL, data)
 }
