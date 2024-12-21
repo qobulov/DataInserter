@@ -26,7 +26,7 @@
         "https://example.com/option2-image.png",
         "https://example.com/option3-image.png"
       ],
-      "answer": "8",
+      "answer": ["8"],
       "solution": "Adding 5 and 3 gives 8.",
       "solution_image_url": "https://example.com/solution-image.png"
     }
