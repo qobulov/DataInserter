@@ -1,4 +1,4 @@
-# JSON Data Inserter
+# JSON Latex Data Inserter
 
 This project is a utility for inserting educational content from JSON files into a server, ensuring the completeness of metadata for classes, topics, lessons, and questions.
 
@@ -32,13 +32,13 @@ The JSON input adheres to the following structure:
       "topic_id": "<Topic ID>",
       "question_type": "<Question Type>",
       "question_level": "<Difficulty Level>",
-      "question_text": "<Question Text>",
+      "question_text": "<Question Text> in latex",
       "question_image_url": "<Image URL>",
       "question_language": "<Question Language>",
-      "options": ["<Option 1>", "<Option 2>", "<Option 3> ++ ... if needed"],
-      "options_url": ["<Option Image URL 1>", "<Option Image URL 2> ... if needed"],
-      "answer": ["<Correct Answer 1>","<Correct Answer 2> ... if needed"],
-      "solution": "<Explanation>",
+      "options": ["<Option 1>", "<Option 2>", "<Option 3> ++ ... if needed (in latex)"],
+      "options_url": ["<Option Image URL 1>", "<Option Image URL 2> ... in latex if needed"],
+      "answer": ["<Correct Answer 1>","<Correct Answer 2> ... if needed (in latex)"],
+      "solution": "<Explanation> in latex if needed",
       "solution_image_url": "<Solution Image URL>"
     }
   }
