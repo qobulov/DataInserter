@@ -35,9 +35,9 @@ The JSON input adheres to the following structure:
       "question_text": "<Question Text>",
       "question_image_url": "<Image URL>",
       "question_language": "<Question Language>",
-      "options": ["<Option 1>", "<Option 2>", "<Option 3> ..."],
-      "options_url": ["<Option Image URL 1>", "<Option Image URL 2> ..."],
-      "answer": "<Correct Answer>",
+      "options": ["<Option 1>", "<Option 2>", "<Option 3> ++ ... if needed"],
+      "options_url": ["<Option Image URL 1>", "<Option Image URL 2> ... if needed"],
+      "answer": ["<Correct Answer 1>","<Correct Answer 2> ... if needed"],
       "solution": "<Explanation>",
       "solution_image_url": "<Solution Image URL>"
     }

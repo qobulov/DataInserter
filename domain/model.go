@@ -71,7 +71,7 @@ type Question struct {
 	QuestionVideoURL *string  `json:"question_video_url,omitempty" validate:"omitempty, url"`
 	Options          []string `json:"options"`
 	OptionsURL       []string `json:"options_url"`
-	Answer           string   `json:"answer"`
+	Answer           []string `json:"answer"`
 	Solution         *string  `json:"solution,omitempty"`
 	SolutionImageURL *string  `json:"solution_image_url,omitempty"`
 	QuestionLanguage string   `json:"question_language"`
@@ -86,7 +86,7 @@ type CreateQuestionParams struct {
 	QuestionVideoURL *string  `json:"question_video_url,omitempty" validate:"omitempty, url"`
 	Options          []string `json:"options" validate:"required,min=2,dive,required"`
 	OptionsURL       []string `json:"options_url" validate:"omitempty,dive,url"`
-	Answer           string   `json:"answer" validate:"required"`
+	Answer           []string `json:"answer" validate:"required"`
 	Solution         *string  `json:"solution,omitempty" validate:"omitempty"`
 	SolutionImageURL *string  `json:"solution_image_url,omitempty" validate:"omitempty,url"`
 	QuestionLanguage string   `json:"question_language" validate:"required,oneof=english hindi"`
@@ -94,9 +94,9 @@ type CreateQuestionParams struct {
 
 // Json data --------------------------------------------------
 type Data struct {
-	Class    CreateClassParams    `json:"class"`
-	Chapter  CreateChapterParams  `json:"chapter"`
-	Topic    CreateTopicParams    `json:"topic"`
+	Class   CreateClassParams   `json:"class"`
+	Chapter CreateChapterParams `json:"chapter"`
+	Topic   CreateTopicParams   `json:"topic"`
 	// Lesson   CreateLessonParams   `json:"lesson"`
 	Question CreateQuestionParams `json:"question"`
 }
