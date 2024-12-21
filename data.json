@@ -1,34 +1,873 @@
 [
   {
     "class": {
-      "name": "Class 1"
+      "name": "5-sinf"
     },
     "chapter": {
-      "name": "I-bob. Natural Sonlar ustida amallar",
-      "class_id": "d737b072-3c6a-49fb-9b76-e367b2328e97"
+      "class_id": "5",
+      "name": "I bob: Natural sonlarni qo'shish va ayirish"
     },
     "topic": {
-      "class_id": "d737b072-3c6a-49fb-9b76-e367b2328e97",
-      "chapter_id": "ce01f2cb-b084-4e73-b433-e3e6fd43f56d",
-      "title": "Natural Sonlar",
-      "name": "Natural Sonlarni qo'shish"
+      "class_id": "5",
+      "chapter_id": "natural_sums_subtraction",
+      "title": "Natural sonlar",
+      "name": "Natural sonlar va nol haqida tushuncha"
     },
     "question": {
-      "topic_id": "aecd7715-d7d6-4145-85e0-e6ef606f567f",
+      "topic_id": "natural_sums_zero_concept",
+      "question_type": "multiple_choice",
+      "question_level": "easy",
+      "question_text": "What is the sum of $5$ and $0$?",
+      "question_image_url": "",
+      "question_language": "english",
+      "options": [
+        "$0$",
+        "$5$",
+        "$10$"
+      ],
+      "options_url": [],
+      "answer": ["$5$"],
+      "solution": "Adding $0$ to any natural number does not change its value, so $5 + 0 = 5$.",
+      "solution_image_url": ""
+    }
+  },
+  {
+    "class": {
+      "name": "5-sinf"
+    },
+    "chapter": {
+      "class_id": "5",
+      "name": "I bob: Natural sonlarni qo'shish va ayirish"
+    },
+    "topic": {
+      "class_id": "5",
+      "chapter_id": "natural_sums_subtraction",
+      "title": "Natural sonlar",
+      "name": "Natural sonlar va nol haqida tushuncha"
+    },
+    "question": {
+      "topic_id": "natural_sums_zero_concept",
       "question_type": "multiple_choice",
       "question_level": "medium",
-      "question_text": "What is the sum of 5 and 3?",
-      "question_image_url": "https://example.com/question-image.png",
+      "question_text": "What is the result of $0 + 12$?",
+      "question_image_url": "",
       "question_language": "english",
-      "options": ["8", "7", "10"],
-      "options_url": [
-        "https://example.com/option1-image.png",
-        "https://example.com/option2-image.png",
-        "https://example.com/option3-image.png"
+      "options": [
+        "$0$",
+        "$12$",
+        "$120$"
       ],
-      "answer": ["8"],
-      "solution": "Adding 5 and 3 gives 8.",
-      "solution_image_url": "https://example.com/solution-image.png"
+      "options_url": [],
+      "answer": ["$12$"],
+      "solution": "Adding $0$ to $12$ keeps the value unchanged, so $0 + 12 = 12$.",
+      "solution_image_url": ""
     }
-  }
+  },
+  {
+    "class": {
+      "name": "5-sinf"
+    },
+    "chapter": {
+      "class_id": "5",
+      "name": "I bob: Natural sonlarni qo'shish va ayirish"
+    },
+    "topic": {
+      "class_id": "5",
+      "chapter_id": "natural_sums_subtraction",
+      "title": "Natural sonlar",
+      "name": "Natural sonlar va nol haqida tushuncha"
+    },
+    "question": {
+      "topic_id": "natural_sums_zero_concept",
+      "question_type": "multiple_choice",
+      "question_level": "hard",
+      "question_text": "If $x + 0 = x$ and $x$ is a natural number, which of the following equations is true?",
+      "question_image_url": "",
+      "question_language": "english",
+      "options": [
+        "$0 + 7 = 0$",
+        "$7 + 0 = 7$",
+        "$7 + 0 = 0$"
+      ],
+      "options_url": [],
+      "answer": ["$7 + 0 = 7$"],
+      "solution": "For any natural number $x$, adding $0$ does not change its value. Thus, $7 + 0 = 7$.",
+      "solution_image_url": ""
+    }
+  },
+  {
+    "class": {
+      "name": "5-sinf"
+    },
+    "chapter": {
+      "class_id": "5-sinf",
+      "name": "I bob: Natural sonlarni qo'shish va ayirish"
+    },
+    "topic": {
+      "class_id": "5-sinf",
+      "chapter_id": "I bob",
+      "title": "Natural sonlar",
+      "name": "Natural sonlar va nol haqida tushuncha"
+    },
+    "question": {
+      "topic_id": "Natural sonlar",
+      "question_type": "Multiple choice",
+      "question_level": "Easy",
+      "question_text": "Quyidagi sonlardan qaysi biri natural son emas? \\( \\text{A) } 0 \\text{ B) } 3 \\text{ C) } 1 \\text{ D) } 7 \\)",
+      "question_language": "uzbek",
+      "options": ["0", "3", "1", "7"],
+      "answer": ["0"],
+      "solution": "0 natural son hisoblanmaydi, chunki natural sonlar 1 dan boshlanadi."
+    }
+  },
+  {
+    "class": {
+      "name": "5-sinf"
+    },
+    "chapter": {
+      "class_id": "5-sinf",
+      "name": "I bob: Natural sonlarni qo'shish va ayirish"
+    },
+    "topic": {
+      "class_id": "5-sinf",
+      "chapter_id": "I bob",
+      "title": "Natural sonlar",
+      "name": "Natural sonlar va nol haqida tushuncha"
+    },
+    "question": {
+      "topic_id": "Natural sonlar",
+      "question_type": "Multiple choice",
+      "question_level": "Easy",
+      "question_text": "Sonlar qatorida 1 dan keyingi sonni toping. \\( \\text{A) } 2 \\text{ B) } 3 \\text{ C) } 0 \\text{ D) } 1 \\)",
+      "question_language": "uzbek",
+      "options": ["2", "3", "0", "1"],
+      "answer": ["2"],
+      "solution": "Natural sonlar qatori ketma-ketlikda 1, 2, 3 va hokazo bo'ladi."
+    }
+  },
+  {
+    "class": {
+      "name": "5-sinf"
+    },
+    "chapter": {
+      "class_id": "5-sinf",
+      "name": "I bob: Natural sonlarni qo'shish va ayirish"
+    },
+    "topic": {
+      "class_id": "5-sinf",
+      "chapter_id": "I bob",
+      "title": "Natural sonlar",
+      "name": "Natural sonlar va nol haqida tushuncha"
+    },
+    "question": {
+      "topic_id": "Natural sonlar",
+      "question_type": "Multiple choice",
+      "question_level": "Easy",
+      "question_text": "Quyidagi sonlardan qaysi biri natural son emas? \\( \\text{A) } 0 \\text{ B) } 3 \\text{ C) } 1 \\text{ D) } 7 \\)",
+      "question_language": "uzbek",
+      "options": ["0", "3", "1", "7"],
+      "answer": ["0"],
+      "solution": "0 natural son hisoblanmaydi, chunki natural sonlar 1 dan boshlanadi."
+    }
+  },
+  {
+    "class": {
+      "name": "5-sinf"
+    },
+    "chapter": {
+      "class_id": "5-sinf",
+      "name": "I bob: Natural sonlarni qo'shish va ayirish"
+    },
+    "topic": {
+      "class_id": "5-sinf",
+      "chapter_id": "I bob",
+      "title": "Natural sonlar",
+      "name": "Natural sonlar va nol haqida tushuncha"
+    },
+    "question": {
+      "topic_id": "Natural sonlar",
+      "question_type": "Short answer",
+      "question_level": "Easy",
+      "question_text": "Natural sonlarning eng kichik qiymatini yozing.",
+      "question_language": "uzbek",
+      "options": [],
+      "answer": ["1"],
+      "solution": "Natural sonlar qatorining eng kichik qiymati 1 ga teng."
+    }
+  },
+  {
+    "class": {
+      "name": "5-sinf"
+    },
+    "chapter": {
+      "class_id": "5-sinf",
+      "name": "I bob: Natural sonlarni qo'shish va ayirish"
+    },
+    "topic": {
+      "class_id": "5-sinf",
+      "chapter_id": "I bob",
+      "title": "Natural sonlar",
+      "name": "Natural sonlar va nol haqida tushuncha"
+    },
+    "question": {
+      "topic_id": "Natural sonlar",
+      "question_type": "Multiple choice",
+      "question_level": "Easy",
+      "question_text": "Sonlar qatorida 1 dan keyingi sonni toping. \\( \\text{A) } 2 \\text{ B) } 3 \\text{ C) } 0 \\text{ D) } 1 \\)",
+      "question_language": "uzbek",
+      "options": ["2", "3", "0", "1"],
+      "answer": ["2"],
+      "solution": "Natural sonlar qatori ketma-ketlikda 1, 2, 3 va hokazo bo'ladi."
+    }
+  },
+  {
+    "class": {
+      "name": "5-sinf"
+    },
+    "chapter": {
+      "class_id": "5-sinf",
+      "name": "I bob: Natural sonlarni qo'shish va ayirish"
+    },
+    "topic": {
+      "class_id": "5-sinf",
+      "chapter_id": "I bob",
+      "title": "Natural sonlar",
+      "name": "Natural sonlar va nol haqida tushuncha"
+    },
+    "question": {
+      "topic_id": "Natural sonlar",
+      "question_type": "Short answer",
+      "question_level": "Easy",
+      "question_text": "Natural sonlar qatori cheksizmi yoki chekli?",
+      "question_language": "uzbek",
+      "options": [],
+      "answer": ["Cheksiz"],
+      "solution": "Natural sonlar qatori cheksiz davom etadi."
+    }
+  },
+  {
+    "class": {
+      "name": "5-sinf"
+    },
+    "chapter": {
+      "class_id": "5-sinf",
+      "name": "I bob: Natural sonlarni qo'shish va ayirish"
+    },
+    "topic": {
+      "class_id": "5-sinf",
+      "chapter_id": "I bob",
+      "title": "Natural sonlar",
+      "name": "Natural sonlar va nol haqida tushuncha"
+    },
+    "question": {
+      "topic_id": "Natural sonlar",
+      "question_type": "Multiple choice",
+      "question_level": "Easy",
+      "question_text": "Natural sonlar qanday raqamlardan tashkil topadi? \\( \\text{A) } 1 \\text{dan 9 gacha} \\text{ B) } 0 \\text{dan 9 gacha} \\text{ C) } 1 \\text{dan 0 gacha} \\text{ D) } 1 \\text{dan cheksizgacha} \\)",
+      "question_language": "uzbek",
+      "options": ["1 dan 9 gacha", "0 dan 9 gacha", "1 dan 0 gacha", "1 dan cheksizgacha"],
+      "answer": ["1 dan cheksizgacha"],
+      "solution": "Natural sonlar qatori 1 dan boshlanib cheksiz davom etadi."
+    }
+  },
+  {
+    "class": {
+      "name": "5-sinf"
+    },
+    "chapter": {
+      "class_id": "5-sinf",
+      "name": "I bob: Natural sonlarni qo'shish va ayirish"
+    },
+    "topic": {
+      "class_id": "5-sinf",
+      "chapter_id": "I bob",
+      "title": "Natural sonlar",
+      "name": "Natural sonlar va nol haqida tushuncha"
+    },
+    "question": {
+      "topic_id": "Natural sonlar",
+      "question_type": "Short answer",
+      "question_level": "Medium",
+      "question_text": "Natural sonlarning cheksizligini qanday isbotlash mumkin?",
+      "question_language": "uzbek",
+      "options": [],
+      "answer": ["Har bir natural sondan keyingi sonni topish mumkinligi sababli, ular cheksizdir."],
+      "solution": "Natural sonlar cheksiz davom etadi, chunki har bir sonni 1 ga oshirib yangi son hosil qilinadi."
+    }
+  },
+  {
+    "class": {
+      "name": "5-sinf"
+    },
+    "chapter": {
+      "class_id": "5-sinf",
+      "name": "I bob: Natural sonlarni qo'shish va ayirish"
+    },
+    "topic": {
+      "class_id": "5-sinf",
+      "chapter_id": "I bob",
+      "title": "Natural sonlar",
+      "name": "Natural sonlar va nol haqida tushuncha"
+    },
+    "question": {
+      "topic_id": "Natural sonlar",
+      "question_type": "Multiple choice",
+      "question_level": "Medium",
+      "question_text": "Natural sonlar o'rtasida qaysi amal doimo natural son hosil qiladi? \\( \\text{A) } Qo'shish \\text{ B) } Ayirish \\text{ C) } Ko'paytirish \\text{ D) } Bo'lish \\)",
+      "question_language": "uzbek",
+      "options": ["Qo'shish", "Ayirish", "Ko'paytirish", "Bo'lish"],
+      "answer": ["Qo'shish", "Ko'paytirish"],
+      "solution": "Natural sonlarning qo'shilishi va ko'paytirilishi natijasi doimo natural son bo'ladi."
+    }
+  },
+  {
+    "class": {
+      "name": "5-sinf"
+    },
+    "chapter": {
+      "class_id": "5-sinf",
+      "name": "I bob: Natural sonlarni qo'shish va ayirish"
+    },
+    "topic": {
+      "class_id": "5-sinf",
+      "chapter_id": "I bob",
+      "title": "Natural sonlar",
+      "name": "Natural sonlar va nol haqida tushuncha"
+    },
+    "question": {
+      "topic_id": "Natural sonlar",
+      "question_type": "Short answer",
+      "question_level": "Medium",
+      "question_text": "Natural sonlar qatori qanday o'nlik sanoq sistemasida tasvirlanadi?",
+      "question_language": "uzbek",
+      "options": [],
+      "answer": ["O'nlik sanoq sistemasida."],
+      "solution": "Natural sonlar o'nlik sanoq sistemasida 0 dan 9 gacha bo'lgan raqamlardan tuziladi."
+    }
+  },
+  {
+    "class": {
+      "name": "5-sinf"
+    },
+    "chapter": {
+      "class_id": "5-sinf",
+      "name": "I bob: Natural sonlarni qo'shish va ayirish"
+    },
+    "topic": {
+      "class_id": "5-sinf",
+      "chapter_id": "I bob",
+      "title": "Natural sonlar",
+      "name": "Natural sonlar va nol haqida tushuncha"
+    },
+    "question": {
+      "topic_id": "Natural sonlar",
+      "question_type": "Multiple choice",
+      "question_level": "Medium",
+      "question_text": "Natural sonlardan foydalanib, \\(23 + 45\\) amalining natijasini toping. \\( \\text{A) } 58 \\text{ B) } 68 \\text{ C) } 78 \\text{ D) } 88 \\)",
+      "question_language": "uzbek",
+      "options": ["58", "68", "78", "88"],
+      "answer": ["68"],
+      "solution": "Natural sonlarni qo'shishda \\(23 + 45 = 68\\)."
+    }
+  },
+  {
+    "class": {
+      "name": "5-sinf"
+    },
+    "chapter": {
+      "class_id": "5-sinf",
+      "name": "I bob: Natural sonlarni qo'shish va ayirish"
+    },
+    "topic": {
+      "class_id": "5-sinf",
+      "chapter_id": "I bob",
+      "title": "Natural sonlar",
+      "name": "Natural sonlar va nol haqida tushuncha"
+    },
+    "question": {
+      "topic_id": "Natural sonlar",
+      "question_type": "Multiple choice",
+      "question_level": "Hard",
+      "question_text": "Natural sonlarning yig'indisini toping: \\(1256 + 342 + 789\\). \\( \\text{A) } 2387 \\text{ B) } 2397 \\text{ C) } 2385 \\text{ D) } 2400 \\)",
+      "question_language": "uzbek",
+      "options": ["2387", "2397", "2385", "2400"],
+      "answer": ["2387"],
+      "solution": "\\(1256 + 342 + 789 = 2387\\). Har bir qadamda natural sonlarning ustuncha qo'shilishidan foydalaniladi."
+    }
+  },
+  {
+    "class": {
+      "name": "5-sinf"
+    },
+    "chapter": {
+      "class_id": "5-sinf",
+      "name": "I bob: Natural sonlarni qo'shish va ayirish"
+    },
+    "topic": {
+      "class_id": "5-sinf",
+      "chapter_id": "I bob",
+      "title": "Natural sonlar",
+      "name": "Natural sonlar va nol haqida tushuncha"
+    },
+    "question": {
+      "topic_id": "Natural sonlar",
+      "question_type": "Multiple choice",
+      "question_level": "Hard",
+      "question_text": "Natural sonlarni ko'paytirish natijasida hosil bo'ladigan eng kichik natija qaysi? \\( \\text{A) } 1 \\text{ B) } 2 \\text{ C) } 0 \\text{ D) } Cheksiz \\)",
+      "question_language": "uzbek",
+      "options": ["1", "2", "0", "Cheksiz"],
+      "answer": ["1"],
+      "solution": "Natural sonlarning ko'paytmasi kamida \\(1\\) bo'lishi mumkin, chunki nol natural son emas."
+    }
+  },
+  {
+    "class": {
+      "name": "5-sinf"
+    },
+    "chapter": {
+      "class_id": "5-sinf",
+      "name": "I bob: Natural sonlarni qo'shish va ayirish"
+    },
+    "topic": {
+      "class_id": "5-sinf",
+      "chapter_id": "I bob",
+      "title": "Natural sonlar",
+      "name": "Natural sonlar va nol haqida tushuncha"
+    },
+    "question": {
+      "topic_id": "Natural sonlar",
+      "question_type": "Short answer",
+      "question_level": "Hard",
+      "question_text": "Natural sonlar bilan qoldiqli bo'lishni qanday aniqlash mumkin?",
+      "question_language": "uzbek",
+      "options": [],
+      "answer": ["Natural sonlarni bir-biriga bo'lganda, qoldiqni topish uchun bo'luvchi va bo'linuvchini aniqlash kerak."],
+      "solution": "Natural sonlar bo'lganda, qoldiqni topish uchun quyidagicha aniqlanadi: \\(q = a - b \\times n\\), bunda \\(q\\) qoldiq va \\(n\\) natija."
+    }
+  },
+  {
+    "class": {
+      "name": "5-sinf"
+    },
+    "chapter": {
+      "class_id": "5-sinf",
+      "name": "I bob: Natural sonlarni qo'shish va ayirish"
+    },
+    "topic": {
+      "class_id": "5-sinf",
+      "chapter_id": "I bob",
+      "title": "Natural sonlar",
+      "name": "Natural sonlar va nol haqida tushuncha"
+    },
+    "question": {
+      "topic_id": "Natural sonlar",
+      "question_type": "Multiple choice",
+      "question_level": "Hard",
+      "question_text": "Natural sonlar qatoridagi 1000-chi element qaysi? \\( \\text{A) } 999 \\text{ B) } 1000 \\text{ C) } 1001 \\text{ D) } 998 \\)",
+      "question_language": "uzbek",
+      "options": ["999", "1000", "1001", "998"],
+      "answer": ["1000"],
+      "solution": "Natural sonlar qatorida \\(n\\)-chi element \\(n\\) ga teng, shuning uchun 1000-chi element \\(1000\\) bo'ladi."
+    }
+  },
+  {
+    "class": {
+      "name": "5-sinf"
+    },
+    "chapter": {
+      "class_id": "5-sinf",
+      "name": "I bob: Natural sonlarni qo'shish va ayirish"
+    },
+    "topic": {
+      "class_id": "5-sinf",
+      "chapter_id": "I bob",
+      "title": "Natural sonlar",
+      "name": "Natural sonlarni taqqoslash"
+    },
+    "question": {
+      "topic_id": "Natural sonlarni taqqoslash",
+      "question_type": "Multiple choice",
+      "question_level": "Easy",
+      "question_text": "Qaysi son kattaroq? \\( 45 \\) va \\( 54 \\). \\( \\text{A) } 45 \\text{ B) } 54 \\text{ C) } Teng \\text{ D) } Javob yo'q \\)",
+      "question_language": "uzbek",
+      "options": ["45", "54", "Teng", "Javob yo'q"],
+      "answer": ["54"],
+      "solution": "54 soni 45 dan kattaroq, chunki raqamlar chapdan boshlab taqqoslanganda birinchi katta raqam aniqlanadi."
+    }
+  },
+  {
+    "class": {
+      "name": "5-sinf"
+    },
+    "chapter": {
+      "class_id": "5-sinf",
+      "name": "I bob: Natural sonlarni qo'shish va ayirish"
+    },
+    "topic": {
+      "class_id": "5-sinf",
+      "chapter_id": "I bob",
+      "title": "Natural sonlar",
+      "name": "Natural sonlarni taqqoslash"
+    },
+    "question": {
+      "topic_id": "Natural sonlarni taqqoslash",
+      "question_type": "Multiple choice",
+      "question_level": "Easy",
+      "question_text": "Qaysi son kichikroq? \\( 872 \\) va \\( 782 \\). \\( \\text{A) } 872 \\text{ B) } 782 \\text{ C) } Teng \\text{ D) } Javob yo'q \\)",
+      "question_language": "uzbek",
+      "options": ["872", "782", "Teng", "Javob yo'q"],
+      "answer": ["782"],
+      "solution": "782 soni kichikroq, chunki 7 < 8 birinchi xonalardan aniqlanadi."
+    }
+  },
+  {
+    "class": {
+      "name": "5-sinf"
+    },
+    "chapter": {
+      "class_id": "5-sinf",
+      "name": "I bob: Natural sonlarni qo'shish va ayirish"
+    },
+    "topic": {
+      "class_id": "5-sinf",
+      "chapter_id": "I bob",
+      "title": "Natural sonlar",
+      "name": "Natural sonlarni taqqoslash"
+    },
+    "question": {
+      "topic_id": "Natural sonlarni taqqoslash",
+      "question_type": "Multiple choice",
+      "question_level": "Easy",
+      "question_text": "Sonlarni tartiblang: \\( 12, 8, 15 \\). \\( \\text{A) } 8, 12, 15 \\text{ B) } 15, 12, 8 \\text{ C) } 12, 15, 8 \\text{ D) } Javob yo'q \\)",
+      "question_language": "uzbek",
+      "options": ["8, 12, 15", "15, 12, 8", "12, 15, 8", "Javob yo'q"],
+      "answer": ["8, 12, 15"],
+      "solution": "Natural sonlarni o'sish tartibida yozilsa: 8, 12, 15 bo'ladi."
+    }
+  },
+  {
+    "class": {
+      "name": "5-sinf"
+    },
+    "chapter": {
+      "class_id": "5-sinf",
+      "name": "I bob: Natural sonlarni qo'shish va ayirish"
+    },
+    "topic": {
+      "class_id": "5-sinf",
+      "chapter_id": "I bob",
+      "title": "Natural sonlar",
+      "name": "Natural sonlarni taqqoslash"
+    },
+    "question": {
+      "topic_id": "Natural sonlarni taqqoslash",
+      "question_type": "Multiple choice",
+      "question_level": "Easy",
+      "question_text": "Qaysi son bir xil xonali? \\( 125 \\) va \\( 99 \\). \\( \\text{A) } 125 \\text{ B) } 99 \\text{ C) } Teng \\text{ D) } Javob yo'q \\)",
+      "question_language": "uzbek",
+      "options": ["125", "99", "Teng", "Javob yo'q"],
+      "answer": ["Javob yo'q"],
+      "solution": "125 uch xonali, 99 ikki xonali, shuning uchun javob yo'q."
+    }
+  },
+  {
+    "class": {
+      "name": "5-sinf"
+    },
+    "chapter": {
+      "class_id": "5-sinf",
+      "name": "I bob: Natural sonlarni qo'shish va ayirish"
+    },
+    "topic": {
+      "class_id": "5-sinf",
+      "chapter_id": "I bob",
+      "title": "Natural sonlar",
+      "name": "Natural sonlarni taqqoslash"
+    },
+    "question": {
+      "topic_id": "Natural sonlarni taqqoslash",
+      "question_type": "Multiple choice",
+      "question_level": "Easy",
+      "question_text": "Sonlar qatorida qaysi son birinchi keladi? \\( 10 \\) va \\( 20 \\). \\( \\text{A) } 10 \\text{ B) } 20 \\text{ C) } Teng \\text{ D) } Javob yo'q \\)",
+      "question_language": "uzbek",
+      "options": ["10", "20", "Teng", "Javob yo'q"],
+      "answer": ["10"],
+      "solution": "Natural sonlar qatorida kichik son birinchi keladi: \\(10\\)."
+    }
+  },
+  {
+    "class": {
+      "name": "5-sinf"
+    },
+    "chapter": {
+      "class_id": "5-sinf",
+      "name": "I bob: Natural sonlarni qo'shish va ayirish"
+    },
+    "topic": {
+      "class_id": "5-sinf",
+      "chapter_id": "I bob",
+      "title": "Natural sonlar",
+      "name": "Natural sonlarni taqqoslash"
+    },
+    "question": {
+      "topic_id": "Natural sonlarni taqqoslash",
+      "question_type": "Multiple choice",
+      "question_level": "Medium",
+      "question_text": "Qaysi son kattaroq? \\( 234 \\) va \\( 324 \\). \\( \\text{A) } 234 \\text{ B) } 324 \\text{ C) } Teng \\text{ D) } Javob yo'q \\)",
+      "question_language": "uzbek",
+      "options": ["234", "324", "Teng", "Javob yo'q"],
+      "answer": ["324"],
+      "solution": "324 soni kattaroq, chunki birinchi xonada 3 > 2."
+    }
+  },
+  {
+    "class": {
+      "name": "5-sinf"
+    },
+    "chapter": {
+      "class_id": "5-sinf",
+      "name": "I bob: Natural sonlarni qo'shish va ayirish"
+    },
+    "topic": {
+      "class_id": "5-sinf",
+      "chapter_id": "I bob",
+      "title": "Natural sonlar",
+      "name": "Natural sonlarni taqqoslash"
+    },
+    "question": {
+      "topic_id": "Natural sonlarni taqqoslash",
+      "question_type": "Multiple choice",
+      "question_level": "Medium",
+      "question_text": "Qaysi son eng kattasi? \\( 405, 504, 450 \\). \\( \\text{A) } 405 \\text{ B) } 504 \\text{ C) } 450 \\text{ D) } Javob yo'q \\)",
+      "question_language": "uzbek",
+      "options": ["405", "504", "450", "Javob yo'q"],
+      "answer": ["504"],
+      "solution": "504 soni eng kattasi, chunki 5 birinchi xonadagi eng katta raqam."
+    }
+  },
+  {
+    "class": {
+      "name": "5-sinf"
+    },
+    "chapter": {
+      "class_id": "5-sinf",
+      "name": "I bob: Natural sonlarni qo'shish va ayirish"
+    },
+    "topic": {
+      "class_id": "5-sinf",
+      "chapter_id": "I bob",
+      "title": "Natural sonlar",
+      "name": "Natural sonlarni taqqoslash"
+    },
+    "question": {
+      "topic_id": "Natural sonlarni taqqoslash",
+      "question_type": "Multiple choice",
+      "question_level": "Medium",
+      "question_text": "Sonlarni kamayish tartibida joylashtiring: \\( 67, 89, 56 \\). \\( \\text{A) } 56, 67, 89 \\text{ B) } 89, 67, 56 \\text{ C) } 67, 56, 89 \\text{ D) } Javob yo'q \\)",
+      "question_language": "uzbek",
+      "options": ["56, 67, 89", "89, 67, 56", "67, 56, 89", "Javob yo'q"],
+      "answer": ["89, 67, 56"],
+      "solution": "Kamayish tartibi: \\(89, 67, 56\\)."
+    }
+  },
+  {
+    "class": {
+      "name": "5-sinf"
+    },
+    "chapter": {
+      "class_id": "5-sinf",
+      "name": "I bob: Natural sonlarni qo'shish va ayirish"
+    },
+    "topic": {
+      "class_id": "5-sinf",
+      "chapter_id": "I bob",
+      "title": "Natural sonlar",
+      "name": "Natural sonlarni taqqoslash"
+    },
+    "question": {
+      "topic_id": "Natural sonlarni taqqoslash",
+      "question_type": "Multiple choice",
+      "question_level": "Medium",
+      "question_text": "Quyidagi tengsizliklardan qaysi biri to'g'ri? \\( \\text{A) } 234 > 243 \\text{ B) } 432 < 342 \\text{ C) } 120 > 112 \\text{ D) } 100 = 101 \\)",
+      "question_language": "uzbek",
+      "options": ["234 > 243", "432 < 342", "120 > 112", "100 = 101"],
+      "answer": ["120 > 112"],
+      "solution": "120 soni 112 dan kattaroq, chunki o'nlik xonasida 2 > 1."
+    }
+  },
+  {
+    "class": {
+      "name": "5-sinf"
+    },
+    "chapter": {
+      "class_id": "5-sinf",
+      "name": "I bob: Natural sonlarni qo'shish va ayirish"
+    },
+    "topic": {
+      "class_id": "5-sinf",
+      "chapter_id": "I bob",
+      "title": "Natural sonlar",
+      "name": "Natural sonlarni taqqoslash"
+    },
+    "question": {
+      "topic_id": "Natural sonlarni taqqoslash",
+      "question_type": "Multiple choice",
+      "question_level": "Medium",
+      "question_text": "Natural sonlarni taqqoslang: \\( 650 \\) va \\( 605 \\). Qaysi biri kattaroq? \\( \\text{A) } 650 \\text{ B) } 605 \\text{ C) } Teng \\text{ D) } Javob yo'q \\)",
+      "question_language": "uzbek",
+      "options": ["650", "605", "Teng", "Javob yo'q"],
+      "answer": ["650"],
+      "solution": "650 soni kattaroq, chunki yuzlik xonasida 6 = 6, lekin o'nlik xonasida 5 > 0."
+    }
+  },
+  {
+    "class": {
+      "name": "5-sinf"
+    },
+    "chapter": {
+      "class_id": "5-sinf",
+      "name": "I bob: Natural sonlarni qo'shish va ayirish"
+    },
+    "topic": {
+      "class_id": "5-sinf",
+      "chapter_id": "I bob",
+      "title": "Natural sonlar",
+      "name": "Natural sonlarni taqqoslash"
+    },
+    "question": {
+      "topic_id": "Natural sonlarni taqqoslash",
+      "question_type": "Multiple choice",
+      "question_level": "Medium",
+      "question_text": "Natural sonlarni taqqoslang: \\( 650 \\) va \\( 605 \\). Qaysi biri kattaroq? \\( \\text{A) } 650 \\text{ B) } 605 \\text{ C) } Teng \\text{ D) } Javob yo'q \\)",
+      "question_language": "uzbek",
+      "options": ["650", "605", "Teng", "Javob yo'q"],
+      "answer": ["650"],
+      "solution": "650 soni kattaroq, chunki yuzlik xonasida 6 = 6, lekin o'nlik xonasida 5 > 0."
+    }
+  },
+  {
+    "class": {
+      "name": "5-sinf"
+    },
+    "chapter": {
+      "class_id": "5-sinf",
+      "name": "I bob: Natural sonlarni qo'shish va ayirish"
+    },
+    "topic": {
+      "class_id": "5-sinf",
+      "chapter_id": "I bob",
+      "title": "Natural sonlar",
+      "name": "Natural sonlarni taqqoslash"
+    },
+    "question": {
+      "topic_id": "Natural sonlarni taqqoslash",
+      "question_type": "Multiple choice",
+      "question_level": "Hard",
+      "question_text": "Sonlarni tartiblang: \\( 894, 943, 489, 984 \\). O'sish tartibida. \\( \\text{A) } 894, 943, 984, 489 \\text{ B) } 489, 894, 943, 984 \\text{ C) } 943, 984, 894, 489 \\text{ D) } Javob yo'q \\)",
+      "question_language": "uzbek",
+      "options": ["894, 943, 984, 489", "489, 894, 943, 984", "943, 984, 894, 489", "Javob yo'q"],
+      "answer": ["489, 894, 943, 984"],
+      "solution": "O'sish tartibida sonlar: \\(489, 894, 943, 984\\)."
+    }
+  },
+  {
+    "class": {
+      "name": "5-sinf"
+    },
+    "chapter": {
+      "class_id": "5-sinf",
+      "name": "I bob: Natural sonlarni qo'shish va ayirish"
+    },
+    "topic": {
+      "class_id": "5-sinf",
+      "chapter_id": "I bob",
+      "title": "Natural sonlar",
+      "name": "Natural sonlarni taqqoslash"
+    },
+    "question": {
+      "topic_id": "Natural sonlarni taqqoslash",
+      "question_type": "Multiple choice",
+      "question_level": "Hard",
+      "question_text": "Sonlarning yig'indisini taqqoslang: \\( (450 + 350) \\) va \\( (600 + 200) \\). \\( \\text{A) } Birinchi kattaroq \\text{ B) } Ikkinchi kattaroq \\text{ C) } Teng \\text{ D) } Javob yo'q \\)",
+      "question_language": "uzbek",
+      "options": ["Birinchi kattaroq", "Ikkinchi kattaroq", "Teng", "Javob yo'q"],
+      "answer": ["Ikkinchi kattaroq"],
+      "solution": "450 + 350 = 800 va 600 + 200 = 800. Natijada ular teng."
+    }
+  },
+  {
+    "class": {
+      "name": "5-sinf"
+    },
+    "chapter": {
+      "class_id": "5-sinf",
+      "name": "I bob: Natural sonlarni qo'shish va ayirish"
+    },
+    "topic": {
+      "class_id": "5-sinf",
+      "chapter_id": "I bob",
+      "title": "Natural sonlar",
+      "name": "Natural sonlarni taqqoslash"
+    },
+    "question": {
+      "topic_id": "Natural sonlarni taqqoslash",
+      "question_type": "Multiple choice",
+      "question_level": "Hard",
+      "question_text": "Qaysi tengsizlik to'g'ri? \\( \\text{A) } 789 > 897 \\text{ B) } 765 < 756 \\text{ C) } 902 > 899 \\text{ D) } Javob yo'q \\)",
+      "question_language": "uzbek",
+      "options": ["789 > 897", "765 < 756", "902 > 899", "Javob yo'q"],
+      "answer": ["902 > 899"],
+      "solution": "902 soni 899 dan kattaroq, chunki yuzlik xonasida 9 > 8."
+    }
+  },
+  {
+    "class": {
+      "name": "5-sinf"
+    },
+    "chapter": {
+      "class_id": "5-sinf",
+      "name": "I bob: Natural sonlarni qo'shish va ayirish"
+    },
+    "topic": {
+      "class_id": "5-sinf",
+      "chapter_id": "I bob",
+      "title": "Natural sonlar",
+      "name": "Natural sonlarni taqqoslash"
+    },
+    "question": {
+      "topic_id": "Natural sonlarni taqqoslash",
+      "question_type": "Multiple choice",
+      "question_level": "Hard",
+      "question_text": "Sonlarning farqini taqqoslang: \\( (745 - 123) \\) va \\( (650 - 230) \\). \\( \\text{A) } Birinchi kattaroq \\text{ B) } Ikkinchi kattaroq \\text{ C) } Teng \\text{ D) } Javob yo'q \\)",
+      "question_language": "uzbek",
+      "options": ["Birinchi kattaroq", "Ikkinchi kattaroq", "Teng", "Javob yo'q"],
+      "answer": ["Birinchi kattaroq"],
+      "solution": "745 - 123 = 622 va 650 - 230 = 420. Birinchi farq kattaroq."
+    }
+  },
+  {
+    "class": {
+      "name": "5-sinf"
+    },
+    "chapter": {
+      "class_id": "5-sinf",
+      "name": "I bob: Natural sonlarni qo'shish va ayirish"
+    },
+    "topic": {
+      "class_id": "5-sinf",
+      "chapter_id": "I bob",
+      "title": "Natural sonlar",
+      "name": "Natural sonlarni taqqoslash"
+    },
+    "question": {
+      "topic_id": "Natural sonlarni taqqoslash",
+      "question_type": "Multiple choice",
+      "question_level": "Hard",
+      "question_text": "Sonlarni kamayish tartibida joylashtiring: \\( 1234, 1324, 1243, 1342 \\). \\( \\text{A) } 1342, 1324, 1243, 1234 \\text{ B) } 1234, 1243, 1324, 1342 \\text{ C) } 1324, 1342, 1243, 1234 \\text{ D) } Javob yo'q \\)",
+      "question_language": "uzbek",
+      "options": ["1342, 1324, 1243, 1234", "1234, 1243, 1324, 1342", "1324, 1342, 1243, 1234", "Javob yo'q"],
+      "answer": ["1342, 1324, 1243, 1234"],
+      "solution": "Kamayish tartibida: \\(1342, 1324, 1243, 1234\\)."
+    }
+  }                                                     
 ]

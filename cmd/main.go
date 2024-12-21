@@ -28,11 +28,11 @@ func main() {
 	}
 
 	// Insert classes and update topics, lessons and questions
-	classURL := "http://student.al-jabr-edu.uz:8086/api/classes"
-	chapterURL := "http://student.al-jabr-edu.uz:8086/api/chapters"
-	topicURL := "http://student.al-jabr-edu.uz:8086/api/topics"
-	questionURL := "http://student.al-jabr-edu.uz:8086/api/questions"
-	lessonURL := "http://student.al-jabr-edu.uz:8086/api/lessons"
+	classURL := "http://206.189.142.88:8086/api/classes"
+	chapterURL := "http://206.189.142.88:8086/api/chapters"
+	topicURL := "http://206.189.142.88:8086/api/topics"
+	questionURL := "http://206.189.142.88:8086/api/questions"
+	lessonURL := "http://206.189.142.88:8086/api/lessons"
 
 	insertClassDataToAPI(classURL, chapterURL, topicURL, questionURL, lessonURL, data)
 }
@@ -102,7 +102,7 @@ func insertTopicDataToAPI(topicURL, questionURL, lessonURL string, data []domain
 	}
 
 	Logger.Info("Topics inserted successfully!")
-	lessonURL = "http://student.al-jabr-edu.uz:8086/api/lessons"
+	lessonURL = "http://206.189.142.88:8086/api/lessons"
 	// insertLessonDataToAPI(lessonURL, data)
 	insertQuestionDataToAPI(questionURL, data)
 }
